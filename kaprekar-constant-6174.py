@@ -4,7 +4,6 @@
 Author: Gungor Efe CETIN
 
 Contact Info:
-
 GitHub: github.com/gungorefecetin
 
 The Kaprekar Constant - 6174
