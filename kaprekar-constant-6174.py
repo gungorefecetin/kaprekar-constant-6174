@@ -62,15 +62,15 @@ def is_6174_real(number, descending_number, ascending_number):
 
                 if temp == 6174:
                     print('It reaches 6174 - The Kaprekar Constant -. It is real!')
-                    return True
+                    # return True
 
                 else:
                     print('It is not 6174 - The Kaprekar Constant -. Did you just find a new constant?')  # :D
-                    return False
+                    # return False
 
     except:
         print('\nThe input that you\'ve entered is not suitable for this.')
-        return False
+        # return False
 
 
 if __name__ == "__main__":
