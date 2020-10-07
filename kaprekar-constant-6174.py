@@ -4,7 +4,10 @@
 Author: Gungor Efe CETIN
 
 Contact Info:
+
 GitHub: github.com/gungorefecetin
+LinkedIn: linkedin.com/gungorefecetin
+Mail: gungor.efe.cetin56@gmail.com
 
 The Kaprekar Constant - 6174
 """
@@ -35,9 +38,10 @@ def is_6174_real(number, descending_number, ascending_number):
     temp = number
 
     try:
-        if descending_number - ascending_number == 6174:
+        if number == 6174:
             print('\n6174, reaches 6174 at 1 step.')
             print('It reaches 6174 - The Kaprekar Constant -. It is real!')
+            # return True
 
         while descending_number - ascending_number != temp:
 
@@ -54,16 +58,20 @@ def is_6174_real(number, descending_number, ascending_number):
 
             counter += 1
 
-            print(f'\n{number}, reaches {temp} at {counter} step.')
+            if descending_number - ascending_number == temp:
+                print(f'\n{number}, reaches {temp} at {counter} step.')
 
-            if temp == 6174:
-                print('It reaches 6174 - The Kaprekar Constant -. It is real!')
+                if temp == 6174:
+                    print('It reaches 6174 - The Kaprekar Constant -. It is real!')
+                    return True
 
-            else:
-                print('It is not 6174 - The Kaprekar Constant -. Did you just find a new constant?')  # :D
+                else:
+                    print('It is not 6174 - The Kaprekar Constant -. Did you just find a new constant?')  # :D
+                    return False
 
     except:
         print('\nThe input that you\'ve entered is not suitable for this.')
+        return False
 
 
 if __name__ == "__main__":
